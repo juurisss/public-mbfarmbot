@@ -127,10 +127,7 @@
                     const usernameRegex = /!follow\s+(\w+)/;
                     const match = formattedMessage.match(usernameRegex);
                     if (match && match[1]) {
-                        const targetBot = match[1];
-                        if (targetBot === bot.username) {
-                            followPlayer(targetBot);
-                        }
+                        followPlayer(match[1]);
                     } else {
                         console.log('Invalid command format. Use: !follow {username}');
                         bot.chat('/pc Invalid command format. Use: !follow {username}');
@@ -138,21 +135,11 @@
                 } else if (formattedMessage.includes('!stopfollow')) {
                     stopFollow();
                 } else if (formattedMessage.includes('!anti-afk')) {
-                    const usernameRegex = /!anti-afk\s+(\w+)/;
-                    const match = formattedMessage.match(usernameRegex);
-                    if (match && match[1]) {
-                        const targetBot = match[1];
-                        if (targetBot === bot.username) {
-                            toggleAntiAfk(bot);
-                        }
-                    } else {
-                        bots.forEach((currentBot) => {
-                            toggleAntiAfk(currentBot);
-                        });
-                    }
+                    bots.forEach((currentBot) => {
+                        toggleAntiAfk(currentBot);
+                    });
                 }
             }
-            
         });
 
         bot.on('end', () => {
