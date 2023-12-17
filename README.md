@@ -32,7 +32,7 @@ For Windows:
 Once the script is running, it's important to ensure that all bots are present within the lobby environment. To initiate their involvement, individually invite each bot and execute the `/party accept` command within the console after ensuring all bots have received invitations. The bot's functionalities can be accessed and controlled by using the `/pc !{command}` format.
 
 Available Commands:
-- `!move (Forward|Back|Left|Right) {Duration}` - Moves the bot in a specified direction. If no duration is provided, the default duration is set to 5 seconds.
+- `!move (Forward|Back|Left|Right|Sprint|Jump) {Duration}` - Moves the bot in a specified direction. If no duration is provided, the default duration is set to 5 seconds.
 - `!follow {player}` - Instructs the bot to follow a specific player.
 - `!stopfollow` - Makes the bot stop following the specific player.
 - `!trackplayer {player}` - Directs the bot's head to aim on a particular player.
