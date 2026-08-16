@@ -1,3 +1,6 @@
+> [!WARNING]
+> This project is archived and no longer maintained. It was developed several years ago, and some features, dependencies, or functionality may no longer work as expected. The repository is preserved for reference and educational purposes.
+
 # MBFARMBOT
 
 ## Table of Contents
