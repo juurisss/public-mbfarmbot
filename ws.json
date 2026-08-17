@@ -1,0 +1,9 @@
+{
+  "id": "public-mbfarmbot",
+  "displayName": "MBFarmBot",
+  "status": "archived",
+  "statusNote": "Archived. No longer actively maintained.",
+  "technologies": ["Mineflayer"],
+  "categories": ["minecraft", "automation"],
+  "featured": false
+}
